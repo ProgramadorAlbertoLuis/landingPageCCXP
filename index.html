@@ -53,7 +53,7 @@
             <h1>
                 PARA A MAIOR CCXP DE TODOS OS TEMPOS
             </h1>
-            <video controls loop autoplay width="700px">
+            <video id="Arlequina" controls loop autoplay width="700px">
                 <source src="./media/Arlequina.mp4">
            </video>
         </div>
@@ -61,15 +61,48 @@
     <div class="container">
         <div class="ingressos">
             <h1> AINDA DÁ TEMPO DE GARANTIR O SEU, MAS CORRE! </h1>
-            <img src="./media/qui.svg" alt="">
-            <img src="/media/sex.svg" alt="">
-            <img src="./media/sat.svg" alt="">
-            <img src="./media/sun.svg" alt="">
+            <img 
+                class="cards-ingressos"
+                src="./media/qui.svg" 
+                onclick="selectCard('#quinta')" 
+                onmouseover="highlightCard('#quinta')" 
+                onmouseout="highlightCard('#quinta')" 
+                id="quinta" 
+                alt=""
+            >
+            <img
+                class="cards-ingressos"
+                src="/media/sex.svg"  
+                onclick="selectCard('#sexta')" 
+                onmouseover="highlightCard('#sexta')" 
+                onmouseout="highlightCard('#sexta')" 
+                id="sexta" 
+                alt=""
+            >
+            <img 
+                class="cards-ingressos"
+                src="./media/sat.svg" 
+                onclick="selectCard('#sabado')" 
+                onmouseover="highlightCard('#sabado')" 
+                onmouseout="highlightCard('#sabado')" 
+                id="sabado" 
+                alt=""
+            >
+            <img 
+                class="cards-ingressos"
+                src="./media/sun.svg" 
+                onclick="selectCard('#domingo')" 
+                onmouseover="highlightCard('#domingo')" 
+                onmouseout="highlightCard('#domingo')" 
+                id="domingo" 
+                alt=""
+            >
         </div>
         <div class="button">
-            <input type="button" value="GARANTA O SEU">
+            <input type="button" value="GARANTA O SEU" onclick="showSelectedCards()">
         </div>
     </div>
-    <script src="script.js"></script>
+    <script src="chronometer.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>

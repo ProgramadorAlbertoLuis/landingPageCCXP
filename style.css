@@ -124,6 +124,10 @@ video{
   box-shadow: 10px 10px 10px 10px grey;
 }
 
+.card-selected{
+  border: 5px solid green;
+}
+
 @media only screen and (max-width: 600px) {
 
   header{
